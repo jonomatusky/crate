@@ -49,12 +49,12 @@ export default class App extends Component {
 
     if (correct) {
       this.setState({ 
-        message: `Great! Onto the next album.`,
+        message: `Great! On to the next album.`,
         scan: null
       })
     } else {
       this.setState({ 
-        message: `Sorry about that, we're still working out all the kinks.`,
+        message: `Sorry about that, we're still working out all the kinks. Let's try again.`,
         scan: null
       })
     }
