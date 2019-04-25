@@ -25,7 +25,7 @@ export default class App extends Component {
       message: null
     })
 
-    axios.post('/scans', data, {})
+    axios.post('/api/scans', data, {})
     .then(res => {
       console.log(res.data)
       this.setState({ 
@@ -45,7 +45,7 @@ export default class App extends Component {
     console.log(correct)
     const data = { correct }
 
-    axios.patch(`/scans/${this.state.scan.scanId}`, data, {})
+    axios.patch(`/api/scans/${this.state.scan.scanId}`, data, {})
 
     if (correct) {
       this.setState({ 
