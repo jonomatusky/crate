@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompactDisc } from '@fortawesome/free-solid-svg-icons'
-import { API_URL } from './config'
 import './App.css'
 import axios from 'axios'
 
