@@ -33,11 +33,14 @@ export default class App extends Component {
         scan: res.data
       })
     }).catch(error => {
+      if (error.response) {
+        this.setState({
+          message: error.response.data.message
+        })
+      }
       this.setState({ 
         scanning: false,
-        message: `Sorry, couldn't find that one! Try another.`
       })
-      console.log(error.message)
     })
   }
 
